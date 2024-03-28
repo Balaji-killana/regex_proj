@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Match Results</title>
+</head>
+<body>
+    <h1>Regex Match Results</h1>
+    <h2>Matched Strings:</h2>
+    <ul>
+        {% for matched_string in matched_strings %}
+            <li>{{ matched_string }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

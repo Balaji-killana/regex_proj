@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex Matcher</title>
+</head>
+<body>
+    <div class ="container">
+
+    <h1>Regex Matcher</h1>
+    <form action="/results" method="post">
+        <label for="test_string">Test String:</label><br>
+        <input type="text" id="test_string" name="test_string"><br><br>
+        <label for="regex_pattern">Regex Pattern:</label><br>
+        <input type="text" id="regex_pattern" name="regex_pattern"><br><br>
+        <button type="submit">Match</button>
+    </form>
+    <h2>Email Validation</h2>
+    <form action="/validate_email" method="post">
+        <label for="email">Email Address:</label><br>
+        <input type="text" id="email" name="email"><br><br>
+        <button type="submit">Validate</button>
+    </form>
+</div> 
+</body>
+</html>
